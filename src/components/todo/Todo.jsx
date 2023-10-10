@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import TodoItem from './TodoItem';
+import './todo.scss';
 
 const initTodos = [
   { id: 1, title: 'Get Milk', done: false },
@@ -51,18 +52,19 @@ export default function Todo() {
   }
 
   return (
-    <>
-      <h1>Your TO DO page</h1>
+    <div className='container'>
+      <h1 className='mainTitle'>Your TO DO page</h1>
       <form onSubmit={handleSubmit}>
-        <fieldset>
+        <fieldset className='fieldset'>
           <legend>Add todo</legend>
           <input
             value={newTodoVal}
             onChange={(e) => setNewTodoVal(e.target.value)}
             type='text'
             placeholder='add todo'
+            className='inputField'
           />
-          <button type='submit'>Add</button>
+          <button className='btn' type='submit'>Add</button>
         </fieldset>
       </form>
       <ul>
@@ -76,6 +78,6 @@ export default function Todo() {
           />
         ))}
       </ul>
-    </>
+    </div>
   );
 }
