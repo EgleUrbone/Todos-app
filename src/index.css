@@ -20,4 +20,5 @@
 
 .btn:hover {
   background-color: #a9622b9a;
+  border: #a9622b9a solid 1px;
 }
