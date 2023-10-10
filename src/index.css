@@ -17,3 +17,7 @@
   color: #E1C9A9;
   font-weight: bold;
 }
+
+.btn:hover {
+  background-color: #a9622b9a;
+}
