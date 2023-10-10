@@ -1,6 +1,21 @@
 .liItem {
-  .done {
-    text-decoration: line-through;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 10px;
+
+  .text {
+    margin: 0;
+    background-color: #BCC4C7;
+    padding: 5px 10px;
+    width: 80%;
+    color: #432D2D;
+  }
+
+    .done {
     color: grey;
+    background-color: rgba(128, 128, 128, 0.302);
+    text-decoration: line-through;
   }
 }

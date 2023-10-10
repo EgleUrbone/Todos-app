@@ -53,7 +53,7 @@ export default function Todo() {
 
   return (
     <div className='container'>
-      <h1 className='mainTitle'>Your TO DO page</h1>
+      <h1 className='mainTitle'>TO DO list</h1>
       <form onSubmit={handleSubmit}>
         <fieldset className='fieldset'>
           <legend>Add todo</legend>
@@ -64,10 +64,10 @@ export default function Todo() {
             placeholder='add todo'
             className='inputField'
           />
-          <button className='btn' type='submit'>Add</button>
+          <button className='btn' type='submit'>ADD</button>
         </fieldset>
       </form>
-      <ul>
+      <ul className='list'>
         {todos.map((tObj) => (
           <TodoItem
             key={tObj.id}

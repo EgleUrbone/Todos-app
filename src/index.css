@@ -6,4 +6,14 @@
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
+  background-color: #E1C9A9;
+}
+
+.btn {
+  border-radius: 8px;
+  border: #A9612B solid 1px;
+  background-color: #A9612B;
+  padding: 8px;
+  color: #E1C9A9;
+  font-weight: bold;
 }
